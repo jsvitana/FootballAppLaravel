@@ -17,7 +17,7 @@ class footballapp extends Controller
 
         $fav_team->save();
 
-        return redirect('/welcome');   //redirect to a screen showing info on fav team : Also why does this not redirect correctly?
+        return redirect('/favTeam');   //redirect to a screen showing info on fav team
 
         //Port over vue code
         //Figure out how to link JS inside of laravel
@@ -32,7 +32,7 @@ class footballapp extends Controller
 
         $favTeam->save();
 
-        return redirect('/welcome');
+        return redirect('/');
 
     }
 }

@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/favTeam', function() {
+    return view('favteam');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
