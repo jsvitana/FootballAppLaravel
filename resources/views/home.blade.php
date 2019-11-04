@@ -16,11 +16,12 @@
 
                     You are logged in! <br>
                     Choose your favorite Team!
-                    <form method="POST" action="/post">
+                    <form method="POST" action="/update">      <!-- Make reactive --- if(fav_team != null) show fav team : else show all options to choose fav_team
+                                                                    Make option to choose fav team then it will bring up this form -->
+                        {{ csrf_field() }}   <!-- does something, ask Guido -->
+                        @method('PUT')       <!-- so laravel can process this as a put and not a post request -->
 
-                        {{ csrf_field() }}
-
-                        <input type="radio" value="cardinals" name="team">
+                        <input type="radio" value="ardinals" name="team">
                         <label for="cardinals">Arizona Cardinals</label>
                         <br>
                         <input type="radio" value="falcons" name="team">
@@ -62,8 +63,8 @@
                         <input type="radio" value="colts" name="team">
                         <label for="colts">Indianapolis Colts</label>
                         <br>
-                        <input type="radio" value="jags" name="team">
-                        <label for="jags">Jacksonville Jaguars</label>
+                        <input type="radio" value="jaguars" name="team">
+                        <label for="jaguars">Jacksonville Jaguars</label>
                         <br>
                         <input type="radio" value="chiefs" name="team">
                         <label for="chiefs">Kansas City Chiefs</label>
@@ -104,11 +105,11 @@
                         <input type="radio" value="49ers" name="team">
                         <label for="49ers">San Francisco 49ers</label>
                         <br>
-                        <input type="radio" value="hawks" name="team">
-                        <label for="hawks">Seattle Seahawks</label>
+                        <input type="radio" value="seahawks" name="team">
+                        <label for="seahawks">Seattle Seahawks</label>
                         <br>
-                        <input type="radio" value="bucs" name="team">
-                        <label for="bucs">Tampa Bay Buccaneers</label>
+                        <input type="radio" value="buccaneers" name="team">
+                        <label for="buccaneers">Tampa Bay Buccaneers</label>
                         <br>
                         <input type="radio" value="titans" name="team">
                         <label for="titans">Tennessee Titans</label>
