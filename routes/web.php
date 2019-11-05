@@ -15,14 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/favTeam', function() {
-    return view('favteam');
+Route::get('/teamstats', function() {
+    return view('teamstats');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/user/{id}','footballapp@show');
 Route::post('/post','footballapp@store');
-
 Route::put('/update','footballapp@update');

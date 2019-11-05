@@ -21,7 +21,7 @@
                         {{ csrf_field() }}   <!-- does something, ask Guido -->
                         @method('PUT')       <!-- so laravel can process this as a put and not a post request -->
 
-                        <input type="radio" value="ardinals" name="team">
+                        <input type="radio" value="cardinals" name="team">
                         <label for="cardinals">Arizona Cardinals</label>
                         <br>
                         <input type="radio" value="falcons" name="team">

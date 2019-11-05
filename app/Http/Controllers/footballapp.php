@@ -7,6 +7,11 @@ use App\post;
 
 class footballapp extends Controller
 {
+    public function show()
+    {
+
+    }
+
     public function update()  //UPDATE
     {
         $user = auth()->user();                        //finds the current logged in user
@@ -17,7 +22,7 @@ class footballapp extends Controller
 
         $fav_team->save();
 
-        return redirect('/favTeam');   //redirect to a screen showing info on fav team
+        return redirect('/teamstats');   //redirect to a screen showing info on fav team
 
         //Port over vue code
         //Figure out how to link JS inside of laravel
