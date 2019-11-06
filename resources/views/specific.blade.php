@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    </head>
+
+    <body>
+        <div class="row" id="FootballData">
+            <!--Clock-->
+            <div class="col s12">
+                <h6>Time left in the Quarter: @{{ object.clock }}</h6>
+            </div>
+            <!--Down-->
+            <div class="col s12">
+                <h6>Current Down: @{{ object.down }}</h6>
+            </div>
+            <!--Yards to go-->
+            <div class="col s12">
+                <h6>Yards to go: @{{ object.togo }}</h6>
+            </div>
+            <!--Name of Teams-->
+            <div class="col s4">
+                <h5>Home</h5>
+                <h4>@{{ object.Hname }}</h4>
+            </div>
+            <div class="col s4">
+                <h3>VS</h3>
+            </div>
+            <div class="col s4">
+                <h5>Away</h5>
+                <h4>@{{ object.Aname }}</h4>
+            </div>
+            <!--First Quarter Score-->
+            <div class="col s4">
+                <h2>@{{ object.HFS }}</h2>
+            </div>
+            <div class="col s4">
+                <h4>First Quarter Score</h4>
+            </div>
+            <div class="col s4">
+                <h2>@{{ object.AFS }}</h2>
+            </div>
+            <!--Second Quarter Score-->
+            <div class="col s4">
+                <h2>@{{ object.HSS }}</h2>
+            </div>
+            <div class="col s4">
+                <h4>Second Quarter Score</h4>
+            </div>
+            <div class="col s4">
+                <h2>@{{ object.ASS }}</h2>
+            </div>
+            <!--Third Quarter Score-->
+            <div class="col s4">
+                <h2>@{{ object.HTS }}</h2>
+            </div>
+            <div class="col s4">
+                <h4>Third Quarter Score</h4>
+            </div>
+            <div class="col s4">
+                <h2>@{{ object.ATS }}</h2>
+            </div>
+            <!--Fourth Quarter Score-->
+            <div class="col s4">
+                <h2>@{{ object.HLS }}</h2>
+            </div>
+            <div class="col s4">
+                <h4>Fourth Quarter Score</h4>
+            </div>
+            <div class="col s4">
+                <h2>@{{ object.ALS }}</h2>
+            </div>
+            <!--Total Score-->
+            <div class="col s4">
+                <h2>@{{ object.HST }}</h2>
+            </div>
+            <div class="col s4">
+                <h4>Total Score</h4>
+            </div>
+            <div class="col s4">
+                <h2>@{{ object.AST }}</h2>
+            </div>
+        </div>
+            <script src="js/vue.js"></script>
+            <script src="js/SpifMain.js"></script>
+    </body>
+</html>
+
+  

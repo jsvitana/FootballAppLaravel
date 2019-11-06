@@ -15,9 +15,27 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Tests the specific team page
+Route::get('/test', function () {
+    return view('specific');
+});
+
+//tests the all team page
+Route::get('/test2', function () {
+    return view('allTeams');
+});
+
+////// Team stats routes ///////
+
 Route::get('/teamstats', function() {
     return view('teamstats');
 });
+
+Route::get('/teamstats/{abbr}', function() {
+    return view('specific');
+});
+
+/////////////////////////////////
 
 Auth::routes();
 
