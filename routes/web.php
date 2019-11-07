@@ -15,14 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Tests the specific team page
-
-//tests the all team page
-Route::get('/test2', function () {
-    return view('allTeams');
-});
 
 ////// Team stats routes ///////
+
+Route::get('/teamscores', function () {
+    return view('allTeams');
+});
 
 Route::get('/teamstats', function() {
     return view('specific');

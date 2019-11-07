@@ -6,7 +6,7 @@
 
     <body>
         <?php 
-        $abbr = 'pitt';
+        $abbr = "";
         ?>
         <h1 id="test">
             <ul>
