@@ -11,7 +11,7 @@
         <h1 id="test">
             <ul>
                 <li v-for="(score, gameNum) in scores">
-                    <a href="{{url('/teamstats/{abbr}')}}">
+                    <a href="{{url('/teamstats')}}">
                         @{{score}}
                         @{{gameNum}}           
                     </a>

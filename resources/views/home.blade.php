@@ -26,7 +26,8 @@
 
                     @if ($team == !null)
                         <h1>Click Here to see how the <?= $team ?> are doing</h1>
-                        
+
+                        <!-- Goes to controller to call function to remove favTeam, sets it to null and reloads page -->
                         <form method="POST" action="/removeFavTeam">
                             {{ csrf_field() }}
                             @method('PUT')
@@ -35,8 +36,7 @@
 
                     @else
                         Choose your favorite Team!
-                        <form method="POST" action="/update">      <!-- Make reactive --- if(fav_team != null) show fav team : else show all options to choose fav_team
-                                                                        Make option to choose fav team then it will bring up this form -->
+                        <form method="POST" action="/update">
                             {{ csrf_field() }}   <!-- does something, ask Guido -->
                             @method('PUT')       <!-- so laravel can process this as a put and not a post request -->
 

@@ -16,9 +16,6 @@ Route::get('/', function () {
 });
 
 // Tests the specific team page
-Route::get('/test', function () {
-    return view('specific');
-});
 
 //tests the all team page
 Route::get('/test2', function () {
@@ -28,7 +25,7 @@ Route::get('/test2', function () {
 ////// Team stats routes ///////
 
 Route::get('/teamstats', function() {
-    return view('teamstats');
+    return view('specific');
 });
 
 Route::get('/teamstats/{abbr}', function() {
