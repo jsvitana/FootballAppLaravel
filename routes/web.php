@@ -44,3 +44,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user/{id}','footballapp@show');
 Route::post('/post','footballapp@store');
 Route::put('/update','footballapp@update');
+Route::put('/removeFavTeam','footballapp@removeFavTeam');
+
+

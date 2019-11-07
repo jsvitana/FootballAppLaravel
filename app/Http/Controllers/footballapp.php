@@ -40,4 +40,14 @@ class footballapp extends Controller
         return redirect('/');
 
     }
+
+    public function removeFavTeam()    //Removes favorite team from database
+    {
+        $user = auth()->user();
+        $fav_team = post::find($user->id);
+        $fav_team->favorite_team = null;
+        $fav_team->save();
+
+        return redirect('/home');
+    }
 }
