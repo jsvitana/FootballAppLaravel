@@ -1,10 +1,11 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/materialize.min.css">
     </head>
 
     <body>
+        <h1 id='test'>{{$num}}</h1>
         <div class="row" id="FootballData">
             <!--Clock-->
             <div class="col s12">
@@ -81,8 +82,8 @@
                 <h2>@{{ object.AST }}</h2>
             </div>
         </div>
-            <script src="js/vue.js"></script>
-            <script src="js/SpifMain.js"></script>
+            <script src="/js/vue.js"></script>
+            <script src="/js/SpifMain.js"></script>
     </body>
 </html>
 

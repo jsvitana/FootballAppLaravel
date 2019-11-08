@@ -22,12 +22,12 @@ Route::get('/teamscores', function () {
     return view('allTeams');
 });
 
-Route::get('/teamstats', function() {
+/*Route::get('/teamstats', function() {     //Do not need this route, delete later
     return view('specific');
-});
+});*/
 
-Route::get('/teamstats/{abbr}', function() {
-    return view('specific');
+Route::get('/teamstats/{num}', function($num) {
+    return view('specific', compact('num'));
 });
 
 /////////////////////////////////

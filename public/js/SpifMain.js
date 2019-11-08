@@ -1,4 +1,5 @@
 const url = "http://www.nfl.com/liveupdate/game-center/2019102100/2019102100_gtd.json"
+let chosenTeam = parseInt(document.getElementById('test').innerHTML);
 
 const app = new Vue({
     el: '#FootballData',
@@ -28,7 +29,7 @@ const app = new Vue({
         .then((data) => {
             this.temp = (data[Object.keys(data)[0]].home.abbr);
             
-            let chosenGame = data[Object.keys(data)[3]];
+            let chosenGame = data[Object.keys(data)[chosenTeam]];
             time = chosenGame.clock === null ? time = 0 : time = chosenGame.clock;
             down2 = chosenGame.down === null ? down2 = 0 : down2 = chosenGame.down;
             yardToGo = chosenGame.togo === null ? yardToGo = 0 : yardToGo = chosenGame.togo;
