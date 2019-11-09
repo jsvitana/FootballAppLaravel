@@ -6,14 +6,14 @@
 
     <body>
         <?php 
-        $abbr = "";
+            $abbr = 'PIT';
         ?>
         <h1 id="test">
             <ul>
-                <li v-for="(score, gameNum) in scores">
-                    <a href="{{url('/teamstats')}}">
+                <li v-for="(score, gameNum, homeTeam) in scores">
+                    <a href="{{url("/teamstats")}}">
                         @{{score}}
-                        @{{gameNum}}           
+                        @{{gameNum}}       
                     </a>
                 </li>
             </ul>

@@ -31,7 +31,7 @@
                         <form method="POST" action="/removeFavTeam">
                             {{ csrf_field() }}
                             @method('PUT')
-                            <input type="submit" value="Remove">
+                            <input type="submit" value="Remove Favorite Team">
                         </form>
 
                     @else
@@ -40,101 +40,101 @@
                             {{ csrf_field() }}   <!-- does something, ask Guido -->
                             @method('PUT')       <!-- so laravel can process this as a put and not a post request -->
 
-                            <input type="radio" value="cardinals" name="team" required>
-                            <label for="cardinals">Arizona Cardinals</label>
+                            <input type="radio" value="ARI" name="team" required>
+                            <label for="ARI">Arizona Cardinals</label>
                             <br>
-                            <input type="radio" value="falcons" name="team" required>
-                            <label for="falcons">Atlanta Falcons</label>
+                            <input type="radio" value="ATL" name="team" required>
+                            <label for="ATL">Atlanta Falcons</label>
                             <br>
-                            <input type="radio" value="ravens" name="team" required>
-                            <label for="ravens">Baltimore Ravens</label>
+                            <input type="radio" value="BAL" name="team" required>
+                            <label for="BAL">Baltimore Ravens</label>
                             <br>
-                            <input type="radio" value="bills" name="team" required>
-                            <label for="bills">Buffalo Bills</label>
+                            <input type="radio" value="BUF" name="team" required>
+                            <label for="BUF">Buffalo Bills</label>
                             <br>
-                            <input type="radio" value="panthers" name="team" required>
-                            <label for="panthers">Carolina Panthers</label>
+                            <input type="radio" value="CAR" name="team" required>
+                            <label for="CAR">Carolina Panthers</label>
                             <br>
-                            <input type="radio" value="bengals" name="team" required>
-                            <label for="bengals">Cincinnati Bengals</label>
+                            <input type="radio" value="CIN" name="team" required>
+                            <label for="CIN">Cincinnati Bengals</label>
                             <br>
-                            <input type="radio" value="bears" name="team" required>
-                            <label for="bears">Chicago Bears</label>
+                            <input type="radio" value="CHI" name="team" required>
+                            <label for="CHI">Chicago Bears</label>
                             <br>
-                            <input type="radio" value="browns" name="team" required>
-                            <label for="browns">Cleveland Browns</label>
+                            <input type="radio" value="CLE" name="team" required>
+                            <label for="CLE">Cleveland Browns</label>
                             <br>
-                            <input type="radio" value="cowboys" name="team" required>
-                            <label for="cowboys">Dallas Cowboys</label>
+                            <input type="radio" value="DAL" name="team" required>
+                            <label for="DAL">Dallas Cowboys</label>
                             <br>
-                            <input type="radio" value="broncos" name="team" required>
-                            <label for="broncos">Denver Broncos</label>
+                            <input type="radio" value="DEN" name="team" required>
+                            <label for="DEN">Denver Broncos</label>
                             <br>
-                            <input type="radio" value="lions" name="team" required>
-                            <label for="lions">Detroit Lions</label>
+                            <input type="radio" value="DET" name="team" required>
+                            <label for="DET">Detroit Lions</label>
                             <br>
-                            <input type="radio" value="packers" name="team" required>
-                            <label for="packers">Green Bay Packers</label>
+                            <input type="radio" value="GB" name="team" required>
+                            <label for="GB">Green Bay Packers</label>
                             <br>
-                            <input type="radio" value="texans" name="team" required>
-                            <label for="texans">Houston Texans</label>
+                            <input type="radio" value="HOU" name="team" required>
+                            <label for="HOU">Houston Texans</label>
                             <br>
-                            <input type="radio" value="colts" name="team" required>
-                            <label for="colts">Indianapolis Colts</label>
+                            <input type="radio" value="IND" name="team" required>
+                            <label for="IND">Indianapolis Colts</label>
                             <br>
-                            <input type="radio" value="jaguars" name="team" required>
-                            <label for="jaguars">Jacksonville Jaguars</label>
+                            <input type="radio" value="JAC" name="team" required>
+                            <label for="JAC">Jacksonville Jaguars</label>
                             <br>
-                            <input type="radio" value="chiefs" name="team" required>
-                            <label for="chiefs">Kansas City Chiefs</label>
+                            <input type="radio" value="KC" name="team" required>
+                            <label for="KC">Kansas City Chiefs</label>
                             <br>
-                            <input type="radio" value="chargers" name="team" required>
-                            <label for="chargers">Los Angeles Chargers</label>
+                            <input type="radio" value="LAC" name="team" required>
+                            <label for="LAC">Los Angeles Chargers</label>
                             <br>
-                            <input type="radio" value="rams" name="team" required>
-                            <label for="rams">Los Angeles Rams</label>
+                            <input type="radio" value="LA" name="team" required>
+                            <label for="LA">Los Angeles Rams</label>
                             <br>
-                            <input type="radio" value="dolphins" name="team" required>
-                            <label for="dolphins">Miami Dolphins</label>
+                            <input type="radio" value="MIA" name="team" required>
+                            <label for="MIA">Miami Dolphins</label>
                             <br>
-                            <input type="radio" value="vikings" name="team" required>
-                            <label for="vikings">Minnesota Vikings</label>
+                            <input type="radio" value="MIN" name="team" required>
+                            <label for="MIN">Minnesota Vikings</label>
                             <br>
-                            <input type="radio" value="patriots" name="team" required>
-                            <label for="patriots">New England Patriots</label>
+                            <input type="radio" value="NE" name="team" required>
+                            <label for="NE">New England Patriots</label>
                             <br>
-                            <input type="radio" value="saints" name="team" required>
-                            <label for="saints">New Orleans Saints</label>
+                            <input type="radio" value="NO" name="team" required>
+                            <label for="NO">New Orleans Saints</label>
                             <br>
-                            <input type="radio" value="giants" name="team" required>
-                            <label for="giants">New York Giants</label>
+                            <input type="radio" value="NYG" name="team" required>
+                            <label for="NYG">New York Giants</label>
                             <br>
-                            <input type="radio" value="jets" name="team" required>
-                            <label for="jets">New York Jets</label>
+                            <input type="radio" value="NYJ" name="team" required>
+                            <label for="NYF">New York Jets</label>
                             <br>
-                            <input type="radio" value="raiders" name="team" required>
-                            <label for="raiders">Oakland Raiders</label>
+                            <input type="radio" value="OAK" name="team" required>
+                            <label for="OAK">Oakland Raiders</label>
                             <br>
-                            <input type="radio" value="eagles" name="team" required>
-                            <label for="eagles">Philadelphia Eagles</label>
+                            <input type="radio" value="PHI" name="team" required>
+                            <label for="PHI">Philadelphia Eagles</label>
                             <br>
-                            <input type="radio" value="steelers" name="team" required>
-                            <label for="steelers">Pittsburgh Steelers</label>
+                            <input type="radio" value="PIT" name="team" required>
+                            <label for="PIT">Pittsburgh Steelers</label>
                             <br>
-                            <input type="radio" value="49ers" name="team" required>
-                            <label for="49ers">San Francisco 49ers</label>
+                            <input type="radio" value="SF" name="team" required>
+                            <label for="SF">San Francisco 49ers</label>
                             <br>
-                            <input type="radio" value="seahawks" name="team" required>
-                            <label for="seahawks">Seattle Seahawks</label>
+                            <input type="radio" value="SEA" name="team" required>
+                            <label for="SEA">Seattle Seahawks</label>
                             <br>
-                            <input type="radio" value="buccaneers" name="team" required>
-                            <label for="buccaneers">Tampa Bay Buccaneers</label>
+                            <input type="radio" value="TB" name="team" required>
+                            <label for="TB">Tampa Bay Buccaneers</label>
                             <br>
-                            <input type="radio" value="titans" name="team" required>
-                            <label for="titans">Tennessee Titans</label>
+                            <input type="radio" value="TEN" name="team" required>
+                            <label for="TEN">Tennessee Titans</label>
                             <br>
-                            <input type="radio" value="redskins" name="team" required>
-                            <label for="redskins">Washington Redskins</label>
+                            <input type="radio" value="WAS" name="team" required>
+                            <label for="WAS">Washington Redskins</label>
                             <br><br>
                             <input type="submit"/>
                         </form>
