@@ -5,7 +5,8 @@
     </head>
 
     <body>
-        <h1 id='test'>{{$num}}</h1>
+        <h1 hidden id='team'>{{$num}}</h1>  <!-- I need this here for the javaScript to pull it -->
+
         <div class="row" id="FootballData">
             <!--Clock-->
             <div class="col s12">
