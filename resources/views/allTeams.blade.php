@@ -5,15 +5,11 @@
     </head>
 
     <body>
-        <?php 
-            $abbr = 'PIT';
-        ?>
         <h1 id="test">
             <ul>
-                <li v-for="(score, gameNum, homeTeam) in scores">
-                    <a href="{{url("/teamstats")}}">
+                <li v-for="(score, index) in object.scores">
+                    <a v-bind:href="'/teamstats/' + object.homeTeamAbbrs[index]">
                         @{{score}}
-                        @{{gameNum}}       
                     </a>
                 </li>
             </ul>

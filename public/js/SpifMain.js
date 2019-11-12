@@ -1,12 +1,11 @@
 const url = "http://www.nfl.com/liveupdate/game-center/2019102100/2019102100_gtd.json"
-let chosenTeamName = document.getElementById('test').innerHTML;
-let chosenTeamNum = 0;
+let chosenTeamName = document.getElementById('team').innerHTML;
+let chosenTeamNum = -1;
 
 // Vue Objects
 const app = new Vue({
     el: '#FootballData',
     data: {
-        temp: {},
         object: {
             togo: '',
             down: '',
@@ -29,15 +28,17 @@ const app = new Vue({
         fetch("http://www.nfl.com/liveupdate/scores/scores.json")
         .then((resp) => resp.json()
         .then((data) => {
-            this.temp = (data[Object.keys(data)[0]].home.abbr);
-
             //converting chosenTeamName to chosenTeamNum
             for(var i=0;i<Object.keys(data).length;i++) {
                 if((data[Object.keys(data)[i]].home.abbr == chosenTeamName) || (data[Object.keys(data)[i]].away.abbr == chosenTeamName)) {
                     chosenTeamNum = i;
                 }
             }
-            // Error Check this for teams that are not playing this week
+            if(chosenTeamNum == -1) {
+                alert("This team is not playing this week");
+                window.history.back();
+            }
+            // Make it look better is team is not playing
             /////////////////////////////
             let chosenGame = data[Object.keys(data)[chosenTeamNum]];
             time = chosenGame.clock === null ? time = 0 : time = chosenGame.clock;
