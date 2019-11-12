@@ -5,17 +5,11 @@
     </head>
 
     <body>
-        <?php 
-            $abbr = 'PIT';
-        ?>
-
         <h1 id="test">
             <ul>
-                <li v-for="(score, gameNum, homeTeam) in scores">   <!-- Restruct this to work with the javascript to get the a dynamic URL -->
-                    <a href="/teamstats/{{$abbr}}">
+                <li v-for="(score, index) in object.scores">
+                    <a v-bind:href="'/teamstats/' + object.homeTeamAbbrs[index]">
                         @{{score}}
-                        <!--@{{gameNum}} -->
-                        @{{homeTeam}}      
                     </a>
                 </li>
             </ul>

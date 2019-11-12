@@ -9,7 +9,10 @@ const url = "http://www.nfl.com/liveupdate/game-center/2019102100/2019102100_gtd
 const app = new Vue({
     el: '#test',
     data: {
-        scores: []
+        object: {
+            scores: [],
+            homeTeamAbbrs: []
+        }
     },
     created () {
         fetch("http://www.nfl.com/liveupdate/scores/scores.json")
@@ -31,8 +34,10 @@ const app = new Vue({
                 if(awayScore === null) {
                     awayScore = 0;
                 }
+
+                this.object.homeTeamAbbrs.push(homeTeam);
     
-                this.scores.push(awayTeam + ":" + awayScore + " vs " + homeTeam + ":" + homeScore);
+                this.object.scores.push(awayTeam + ":" + awayScore + " vs " + homeTeam + ":" + homeScore);
             }
         }))
     }
