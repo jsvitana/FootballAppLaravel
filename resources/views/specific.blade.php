@@ -22,65 +22,65 @@
             </div>
             <!--Name of Teams-->
             <div class="col s4">
-                <h5>Home</h5>
-                <h4>@{{ object.Hname }}</h4>
+                <h5>Away</h5>
+                <h4>@{{ object.Aname }}</h4>
             </div>
             <div class="col s4">
                 <h3>VS</h3>
             </div>
             <div class="col s4">
-                <h5>Away</h5>
-                <h4>@{{ object.Aname }}</h4>
+                <h5>Home</h5>
+                <h4>@{{ object.Hname }}</h4>
             </div>
             <!--First Quarter Score-->
             <div class="col s4">
-                <h2>@{{ object.HFS }}</h2>
+                <h2>@{{ object.AFS }}</h2>
             </div>
             <div class="col s4">
                 <h4>First Quarter Score</h4>
             </div>
             <div class="col s4">
-                <h2>@{{ object.AFS }}</h2>
+                <h2>@{{ object.HFS }}</h2>
             </div>
             <!--Second Quarter Score-->
             <div class="col s4">
-                <h2>@{{ object.HSS }}</h2>
+                <h2>@{{ object.ASS }}</h2>
             </div>
             <div class="col s4">
                 <h4>Second Quarter Score</h4>
             </div>
             <div class="col s4">
-                <h2>@{{ object.ASS }}</h2>
+                <h2>@{{ object.HSS }}</h2>
             </div>
             <!--Third Quarter Score-->
             <div class="col s4">
-                <h2>@{{ object.HTS }}</h2>
+                <h2>@{{ object.ATS }}</h2>
             </div>
             <div class="col s4">
                 <h4>Third Quarter Score</h4>
             </div>
             <div class="col s4">
-                <h2>@{{ object.ATS }}</h2>
+                <h2>@{{ object.HTS }}</h2>
             </div>
             <!--Fourth Quarter Score-->
             <div class="col s4">
-                <h2>@{{ object.HLS }}</h2>
+                <h2>@{{ object.ALS }}</h2>
             </div>
             <div class="col s4">
                 <h4>Fourth Quarter Score</h4>
             </div>
             <div class="col s4">
-                <h2>@{{ object.ALS }}</h2>
+                <h2>@{{ object.HLS }}</h2>
             </div>
             <!--Total Score-->
             <div class="col s4">
-                <h2>@{{ object.HST }}</h2>
+                <h2>@{{ object.AST }}</h2>
             </div>
             <div class="col s4">
                 <h4>Total Score</h4>
             </div>
             <div class="col s4">
-                <h2>@{{ object.AST }}</h2>
+                <h2>@{{ object.HST }}</h2>
             </div>
         </div>
             <script src="/js/vue.js"></script>
