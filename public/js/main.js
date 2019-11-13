@@ -15,31 +15,41 @@ const app = new Vue({
         }
     },
     created () {
-        fetch("http://www.nfl.com/liveupdate/scores/scores.json")
-        .then((resp) => resp.json()
-        .then((data) => {
-            for(var i = 0;i<Object.keys(data).length;i++)
-            {
-                let chosenGame = data[Object.keys(data)[i]];
-                
-               // gameNum = 5;
-                homeTeam = chosenGame.home.abbr;
-                homeScore = chosenGame.home.score.T;
-                awayTeam = chosenGame.away.abbr;
-                awayScore = chosenGame.away.score.T;
+        this.setScores();
+        //setInterval(() => {      //This will indefinitley add to the array needs fixed
+        //    this.setScores();
+        //}, 1000)
+    },
+    methods: {
+        setScores: function() {
+            console.log("testing, teamScores");
+            fetch("http://www.nfl.com/liveupdate/scores/scores.json")
+            .then((resp) => resp.json()
+            .then((data) => {
+                for(var i = 0;i<Object.keys(data).length;i++)
+                {
+                    let chosenGame = data[Object.keys(data)[i]];
+                    
+                // gameNum = 5;
+                    homeTeam = chosenGame.home.abbr;
+                    homeScore = chosenGame.home.score.T;
+                    awayTeam = chosenGame.away.abbr;
+                    awayScore = chosenGame.away.score.T;
 
-                if(homeScore === null) {
-                    homeScore = 0;
-                }
-                if(awayScore === null) {
-                    awayScore = 0;
-                }
+                    if(homeScore === null) {
+                        homeScore = 0;
+                    }
+                    if(awayScore === null) {
+                        awayScore = 0;
+                    }
 
-                this.object.homeTeamAbbrs.push(homeTeam);
-    
-                this.object.scores.push(awayTeam + ":" + awayScore + " vs " + homeTeam + ":" + homeScore);
-            }
-        }))
+                    this.object.homeTeamAbbrs.push(homeTeam);
+        
+                    this.object.scores.push(awayTeam + ":" + awayScore + " vs " + homeTeam + ":" + homeScore);
+                }
+            }))
+        }
+
     }
 })
 
