@@ -31,7 +31,7 @@ class footballapp extends Controller
 
     public function store()    // INSERT
     {
-        $favTeam = new post();
+        $favTeam = new post(); 
 
         $favTeam->favorite_team = request('team');
 
