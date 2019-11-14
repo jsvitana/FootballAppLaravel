@@ -45,7 +45,7 @@ const app = new Vue({
 
                     this.object.homeTeamAbbrs.push(homeTeam);
         
-                    this.object.scores.push(awayTeam + ":" + awayScore + " vs " + homeTeam + ":" + homeScore);
+                    this.object.scores.push(awayTeam + ":" + awayScore + " at " + homeTeam + ":" + homeScore);
                 }
             }))
         }
