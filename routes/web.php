@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 ////// Team stats routes ///////
 
-Route::get('/teamscores', function () {
+Route::get('/teamscores', function () {     //Do not need this anymore, integrated with homepage
     return view('allTeams');
 });
 

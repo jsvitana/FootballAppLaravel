@@ -11,7 +11,8 @@ const app = new Vue({
     data: {
         object: {
             scores: [],
-            homeTeamAbbrs: []
+            homeTeamAbbrs: [],
+            awayTeamAbbrs: []
         }
     },
     created () {
@@ -44,6 +45,7 @@ const app = new Vue({
                     }
 
                     this.object.homeTeamAbbrs.push(homeTeam);
+                    this.object.awayTeamAbbrs.push(awayTeam);
         
                     this.object.scores.push(awayTeam + ":" + awayScore + " at " + homeTeam + ":" + homeScore);
                 }

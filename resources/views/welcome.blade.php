@@ -40,9 +40,9 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="{{url('/')}}">Home</a></li>
-							<li><a href="generic.html">Check Favorite Team</a></li>
-							<li><a href="generic.html">Change Favorite Team</a></li>
-							<li><a href="generic.html">Log Out</a></li>
+							<li><a href="{{url('/')}}">Check Favorite Team</a></li>
+							<li><a href="{{url('/')}}">Change Favorite Team</a></li>
+							<li><a href="{{url('/')}}">Log Out</a></li>
 						</ul>
 					</nav>
 
@@ -56,7 +56,10 @@
 							<section id="test" class="tiles">
 									<article v-for="(score, index) in object.scores" class="style2">
 										<span class="image">
-											<img v-bind:src="'images/' + object.homeTeamAbbrs[index] + '.png'" alt="" />
+											<span style="width: 50%;">
+												<img v-bind:src="'images/' + object.awayTeamAbbrs[index] + '.png'" alt="" />
+												<img v-bind:src="'images/' + object.homeTeamAbbrs[index] + '.png'" alt="" />
+											</span>
 										</span>
 										<a v-bind:href="'/teamstats/' + object.homeTeamAbbrs[index]">
 											<h1>
