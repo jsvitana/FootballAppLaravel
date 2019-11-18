@@ -20,11 +20,6 @@
 					<header id="header">
 						<div class="inner">
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
-
 							<!-- Nav -->
 								<nav>
 									<ul>
@@ -40,7 +35,7 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="{{url('/')}}">Home</a></li>
-							<li><a href="{{url('/')}}">Check Favorite Team</a></li>
+							<li><a href="{{url('/home')}}">Check Favorite Team</a></li>
 							<li><a href="{{url('/')}}">Change Favorite Team</a></li>
 							<li><a href="{{url('/')}}">Log Out</a></li>
 						</ul>
