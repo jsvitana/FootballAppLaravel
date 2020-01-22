@@ -1,0 +1,92 @@
+{
+  "2020011900": {
+    "home": {
+      "score": {
+        "1": 7,
+        "2": 14,
+        "3": 0,
+        "4": 14,
+        "5": 0,
+        "T": 35
+      },
+      "abbr": "KC",
+      "to": 3
+    },
+    "away": {
+      "score": {
+        "1": 10,
+        "2": 7,
+        "3": 0,
+        "4": 7,
+        "5": 0,
+        "T": 24
+      },
+      "abbr": "TEN",
+      "to": 1
+    },
+    "bp": 12,
+    "down": 0,
+    "togo": 0,
+    "clock": "00:39",
+    "posteam": "KC",
+    "note": null,
+    "redzone": false,
+    "stadium": "Arrowhead Stadium",
+    "media": {
+      "radio": {
+        "home": null,
+        "away": null
+      },
+      "tv": "CBS",
+      "sat": null,
+      "sathd": null
+    },
+    "yl": "",
+    "qtr": "Final"
+  },
+  "2020011901": {
+    "home": {
+      "score": {
+        "1": 7,
+        "2": 20,
+        "3": 7,
+        "4": 3,
+        "5": 0,
+        "T": 37
+      },
+      "abbr": "SF",
+      "to": 1
+    },
+    "away": {
+      "score": {
+        "1": 0,
+        "2": 0,
+        "3": 7,
+        "4": 13,
+        "5": 0,
+        "T": 20
+      },
+      "abbr": "GB",
+      "to": 0
+    },
+    "bp": 17,
+    "down": 0,
+    "togo": 0,
+    "clock": "00:34",
+    "posteam": "SF",
+    "note": null,
+    "redzone": false,
+    "stadium": "Levi's® Stadium",
+    "media": {
+      "radio": {
+        "home": null,
+        "away": null
+      },
+      "tv": "FOX",
+      "sat": null,
+      "sathd": null
+    },
+    "yl": "",
+    "qtr": "Final"
+  }
+}
